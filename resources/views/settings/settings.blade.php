@@ -103,7 +103,7 @@
                                 </lord-icon>
                             </div>
                         </div>
-                        <h4 class="card-title font">{{ trans('settings_trans.Basic_settings') }}</h4>
+                        <h4 class="card-title font">Basic settings</h4>
                         <a href="{{ route('settings.manage') }}" class="btn btn-info">
                             {{ trans('settings_trans.Go_to_settings_now') }}
                         </a>
