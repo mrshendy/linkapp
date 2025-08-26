@@ -103,6 +103,9 @@
                             </div><!-- end row -->
                         </div><!-- end col -->
                     </div><!-- end row -->
-              
+
+    @livewire('settings.manage')
+
+
     
 @endsection

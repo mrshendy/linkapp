@@ -25,16 +25,23 @@ class application_settingsController extends Controller
     return view('settings.settings');
 
   }
+public function manage()
+  {
+return view('settings.settings');
 
+}
   /**
    * Show the form for creating a new resource.
    *
    * @return Response
    */
+
+  
   public function create()
   {
+return view('settings.create');
 
-  }
+}
 
   /**
    * Store a newly created resource in storage.
@@ -85,7 +92,7 @@ class application_settingsController extends Controller
    */
   public function edit($id)
   {
-
+    return view('settings.edit',compact('id'));
   }
 
   /**
