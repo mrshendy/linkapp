@@ -24,6 +24,7 @@ return [
     'contract_settings' => 'اعدادات التعاقدات',
     'clinic_settings' => 'اعدادات العيادة',
     'general_settings' => 'اعدادات عامة',
+    'Basic_settings' => 'الإعدادات الأساسية',
     'scheduling_settings' => 'اعدادات الجدولة',
 
 
