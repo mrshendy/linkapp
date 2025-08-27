@@ -8,6 +8,8 @@
 		<meta name="Author" content="نظام ادرة العيادات">
 		<meta name="Keywords" content="العيادات"/>
 		@include('layouts.head')
+		     @livewireStyles
+
 	</head>
 	<body>
 		<!-- Begin page -->
@@ -25,6 +27,8 @@
 	            @include('layouts.javascript')
             	@include('layouts.footer')
 				@include('layouts.json_function')
+				             @livewireScripts
+
 			</body>
 		
 			  
