@@ -18,15 +18,10 @@ return [
     'Go_to_settings_now' => 'اذهب الان الي الاعدادات',
     'Place_settings' => 'اعدادات الاماكن',
     'specialization_settings' => 'اعدادات التخصصات',
-    'medical_settings' => 'اعدادات الطبية',
-    'currency_settings' => 'اعدادات العملاء',
     'nationalities_settings' => 'اعدادات الجنسيات',
-    'contract_settings' => 'اعدادات التعاقدات',
-    'clinic_settings' => 'اعدادات العيادة',
-    'general_settings' => 'اعدادات عامة',
-    'Basic_settings' => 'الإعدادات الأساسية',
-    'scheduling_settings' => 'اعدادات الجدولة',
 
+    'general_settings' => 'اعدادات عامة',
+    'splashscreen_settings' => 'الإعدادات الشاشة الافتتاحية',
 
     //Control buttons
     'add' => 'اضافة',
