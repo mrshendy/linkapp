@@ -27,21 +27,23 @@
                 <thead class="table-light">
                     <tr>
                         <th>#</th>
-                        <th>اللغة</th>
-                        <th>العنوان</th>
+                        <th>العنوان (AR)</th>
+                        <th>العنوان (EN)</th>
                         <th>التطبيق</th>
-                        <th>الوصف</th>
+                        <th>الوصف (AR)</th>
+                        <th>الوصف (EN)</th>
                         <th class="text-center">إجراءات</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @forelse ($settings as $index => $setting)
+                    @forelse ($settings as $manage => $setting)
                         <tr>
-                            <td>{{ $settings->firstItem() + $index }}</td>
-                            <td><span class="badge bg-info">{{ $setting->lang }}</span></td>
-                            <td>{{ $setting->title }}</td>
+                            <td>{{ $settings->firstItem() + $manage }}</td>
+                            <td>{{ $setting->title_ar }}</td>
+                            <td>{{ $setting->title_en }}</td>
                             <td>{{ $setting->app_name }}</td>
-                            <td>{{ $setting->description }}</td>
+                            <td>{{ $setting->description_ar }}</td>
+                            <td>{{ $setting->description_en }}</td>
                             <td class="text-center">
                                 <a href="{{ route('settings.edit', $setting->id) }}" 
                                    class="btn btn-sm btn-warning me-1">
@@ -55,7 +57,7 @@
                             </td>
                         </tr>
                     @empty
-                        <tr><td colspan="6" class="text-center text-muted">لا توجد بيانات</td></tr>
+                        <tr><td colspan="7" class="text-center text-muted">لا توجد بيانات</td></tr>
                     @endforelse
                 </tbody>
             </table>

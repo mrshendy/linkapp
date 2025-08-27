@@ -6,7 +6,7 @@
             <i class="mdi mdi-cog-outline text-warning me-2"></i>
             تعديل الإعداد
         </h4>
-        <a href="{{ route('settings.index') }}" class="btn btn-outline-secondary btn-sm">
+        <a href="{{ route('settings.manage') }}" class="btn btn-outline-secondary btn-sm">
             <i class="mdi mdi-arrow-left"></i> رجوع
         </a>
     </div>
@@ -42,19 +42,15 @@
             <form wire:submit.prevent="update" class="row g-3">
 
                 <div class="col-md-6">
-                    <label class="form-label fw-semibold">اللغة</label>
-                    <select wire:model="lang" class="form-select">
-                        <option value="">اختر اللغة</option>
-                        <option value="ar">العربية</option>
-                        <option value="en">English</option>
-                    </select>
-                    @error('lang') <span class="text-danger small">{{ $message }}</span>@enderror
+                    <label class="form-label fw-semibold">العنوان (AR)</label>
+                    <input type="text" wire:model="title_ar" class="form-control" placeholder="أدخل العنوان بالعربية">
+                    @error('title_ar') <span class="text-danger small">{{ $message }}</span>@enderror
                 </div>
 
                 <div class="col-md-6">
-                    <label class="form-label fw-semibold">العنوان</label>
-                    <input type="text" wire:model="title" class="form-control" placeholder="أدخل العنوان">
-                    @error('title') <span class="text-danger small">{{ $message }}</span>@enderror
+                    <label class="form-label fw-semibold">العنوان (EN)</label>
+                    <input type="text" wire:model="title_en" class="form-control" placeholder="Enter title in English">
+                    @error('title_en') <span class="text-danger small">{{ $message }}</span>@enderror
                 </div>
 
                 <div class="col-md-6">
@@ -69,17 +65,32 @@
                     @error('app_name') <span class="text-danger small">{{ $message }}</span>@enderror
                 </div>
 
-                <div class="col-md-12">
-                    <label class="form-label fw-semibold">الوصف</label>
-                    <textarea wire:model="description" class="form-control" rows="3" placeholder="أدخل الوصف (اختياري)"></textarea>
-                    @error('description') <span class="text-danger small">{{ $message }}</span>@enderror
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">الحالة</label>
+                    <select wire:model="status" class="form-select">
+                        <option value="نشط">نشط</option>
+                        <option value="غير نشط">غير نشط</option>
+                    </select>
+                    @error('status') <span class="text-danger small">{{ $message }}</span>@enderror
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">الوصف (AR)</label>
+                    <textarea wire:model="description_ar" class="form-control" rows="3" placeholder="أدخل الوصف بالعربية"></textarea>
+                    @error('description_ar') <span class="text-danger small">{{ $message }}</span>@enderror
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">الوصف (EN)</label>
+                    <textarea wire:model="description_en" class="form-control" rows="3" placeholder="Enter description in English"></textarea>
+                    @error('description_en') <span class="text-danger small">{{ $message }}</span>@enderror
                 </div>
 
                 <div class="col-12 text-end mt-3">
                     <button type="submit" class="btn btn-warning px-4">
                         <i class="mdi mdi-content-save"></i> تحديث
                     </button>
-                    <a href="{{ route('settings.index') }}" class="btn btn-outline-secondary px-3">
+                    <a href="{{ route('settings.manage') }}" class="btn btn-outline-secondary px-3">
                         <i class="mdi mdi-close"></i> إلغاء
                     </a>
                 </div>

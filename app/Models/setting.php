@@ -10,10 +10,12 @@ class setting extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = [
-        'lang',
-        'title',
+     protected $fillable = [
+        'title_ar',
+        'title_en',
         'app_name',
-        'description',
+        'description_ar',
+        'description_en',
+        'status',
     ];
 }
