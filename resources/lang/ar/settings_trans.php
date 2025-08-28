@@ -22,6 +22,8 @@ return [
 
     'general_settings' => 'اعدادات عامة',
     'splashscreen_settings' => 'الإعدادات الشاشة الافتتاحية',
+    'plural' => 'اعدادات التخصصات ',
+
 
     //Control buttons
     'add' => 'اضافة',

@@ -22,6 +22,8 @@ return [
 
     'general_settings' => 'General Settings',
     'splashscreen_settings' => 'Splash Screen Settings',
+        'plural' => 'Specialty Settings',
+
 
     //Control buttons
     'add' => 'Add',

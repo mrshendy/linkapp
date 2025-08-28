@@ -109,7 +109,7 @@
                     <i class="mdi mdi-cellphone-information text-success" style="font-size:40px;"></i>
                 </div>
             </div>
-            <h5 class="card-title fw-bold mb-2">{{ trans('settings_trans.splashscreen_settings') }}</h5>
+            <h5 class="card-title fw-bold mb-2">{{ trans('settings_trans.plural') }}</h5>
             <a href="{{ route('specialties.index') }}" 
                class="btn btn-primary rounded-pill px-4">
                 <i class="mdi mdi-arrow-left-circle-outline ms-1"></i>
