@@ -6,15 +6,16 @@ namespace App\Http\Controllers\Application_settings;
 use App\Http\Controllers\Controller;
 use RealRashid\SweetAlert\Facades\Alert;
 use App\Http\Requests\Storearea;
-use App\models\city;
-use App\models\countries;
-use App\models\government;
-use App\models\area;
+use App\models\general\city;
+use App\models\general\countries;
+use App\models\general\Government;
+use App\models\general\area;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 class areaController extends Controller
 {
 
+  
   /**
    * Display a listing of the resource.
    *

@@ -1,14 +1,15 @@
 <?php
 
 namespace App\models\general;
+
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Translatable\HasTranslations;
 
 class nationalities extends Model
 {
-
     use HasTranslations;
+
     protected $fillable = [
         'name',
         'default',
@@ -16,14 +17,19 @@ class nationalities extends Model
         'status',
 
     ];
+
     public $translatable = ['name'];
+
     protected $table = 'nationalities_settings';
+
     public $timestamps = true;
+
     use SoftDeletes;
+
     protected $dates = ['deleted_at'];
 
-    public function countries(){
-        return $this->belongsTo (countries::class, 'id_country');
+    public function country()
+    {
+        return $this->belongsTo(countries::class, 'id_country')->nullable();
     }
-
 }

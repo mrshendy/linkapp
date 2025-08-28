@@ -2,7 +2,10 @@
 namespace App\Http\Controllers\Application_settings;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCountry;
-use App\models\countries;
+use App\models\general\city;
+use App\models\general\countries;
+use App\models\general\Government;
+use App\models\general\area;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -20,7 +23,7 @@ class CountriesController extends Controller
     return view('settings.countries',compact('Countries'));
 
   }
-
+ 
   /**
    * Show the form for creating a new resource.
    *

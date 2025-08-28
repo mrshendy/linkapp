@@ -3,8 +3,10 @@ namespace App\Http\Controllers\Application_settings;
 use RealRashid\SweetAlert\Facades\Alert;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreGovernment;
-use App\models\countries;
-use App\models\government ;
+use App\models\general\city;
+use App\models\general\countries;
+use App\models\general\Government;
+use App\models\general\area;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -12,6 +14,7 @@ use Illuminate\Http\Request;
 class GovernmentController extends Controller
 {
 
+  
   /**
    * Display a listing of the resource.
    *

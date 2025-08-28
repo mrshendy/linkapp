@@ -22,12 +22,23 @@ return [
 
     'general_settings' => 'General Settings',
     'splashscreen_settings' => 'Splash Screen Settings',
-        'plural' => 'Specialty Settings',
+    'plural' => 'Specialty Settings',
 
-
-    //Control buttons
+    // Control buttons
     'add' => 'Add',
     'update' => 'Update',
     'delete' => 'Delete',
+
+    'places_settings' => 'Places Settings',
+
+    'countries' => 'Countries Settings',
+    'governorate' => 'Governorates Settings',
+    'city' => 'Cities Settings',
+    'area' => 'Areas Settings',
+    'nationalities' => 'Nationalities Settings',
+
+    'specialties' => 'Specialties Settings',
+    'currencies' => 'Currencies Settings',
+    'splashscreen' => 'Splash Screen Settings',
 
 ];

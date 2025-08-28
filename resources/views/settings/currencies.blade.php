@@ -76,6 +76,7 @@
                                 <?php $i=0; ?>
                                 @foreach($currencieses as $currencies)
                                 <tr>
+                                    
                                     <?php $i++; ?>
                                     <td>{{$i}}</td>
                                     <td>{{$currencies->id}}</td>

@@ -35,7 +35,7 @@
                 </div>
             </div>
             <h5 class="card-title fw-bold mb-2">{{ trans('settings_trans.nationalities_settings') }}</h5>
-            <a href="{{ url('/' . ($page = 'nationalities_settings')) }}" 
+            <a href="{{ route('nationalities.index') }}" 
                class="btn btn-primary rounded-pill px-4">
                 <i class="mdi mdi-arrow-left-circle-outline ms-1"></i>
                 {{ trans('settings_trans.Go_to_settings_now') }}
@@ -43,23 +43,29 @@
         </div>
     </div>
 
+
+
+
     <!-- Places -->
-    <div class="col-xxl-4 col-lg-6">
-        <div class="card text-center shadow-sm border-0 h-100 setting-card">
-            <div class="icon-box mx-auto mb-3">
-                <div class="rounded-circle d-flex align-items-center justify-content-center bg-light shadow-sm"
-                     style="width:90px; height:90px;">
-                    <i class="mdi mdi-map-marker-multiple text-info" style="font-size:40px;"></i>
-                </div>
+<div class="col-xxl-4 col-lg-6">
+    <div class="card text-center shadow-sm border-0 h-100 setting-card">
+        <div class="icon-box mx-auto mb-3">
+            <div class="rounded-circle d-flex align-items-center justify-content-center bg-light shadow-sm"
+                 style="width:90px; height:90px;">
+                <i class="mdi mdi-map-marker-multiple text-info" style="font-size:40px;"></i>
             </div>
-            <h5 class="card-title fw-bold mb-2">{{ trans('settings_trans.Place_settings') }}</h5>
-            <a href="{{ url('/' . ($page = 'places_settings')) }}" 
-               class="btn btn-primary rounded-pill px-4">
-                <i class="mdi mdi-arrow-left-circle-outline ms-1"></i>
-                {{ trans('settings_trans.Go_to_settings_now') }}
-            </a>
         </div>
+        <h5 class="card-title fw-bold mb-2">
+            {{ trans('settings_trans.Place_settings') }}
+        </h5>
+        <a href="{{ route('places.settings') }}" 
+           class="btn btn-primary rounded-pill px-4">
+            <i class="mdi mdi-arrow-left-circle-outline ms-1"></i>
+            {{ trans('settings_trans.Go_to_settings_now') }}
+        </a>
     </div>
+</div>
+
 
 
 

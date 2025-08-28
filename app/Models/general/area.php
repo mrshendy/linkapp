@@ -1,13 +1,15 @@
 <?php
 
 namespace App\models\general;
+
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Translatable\HasTranslations;
 
 class area extends Model
 {
     use HasTranslations;
+
     protected $fillable = [
         'name',
         'id_country',
@@ -17,22 +19,29 @@ class area extends Model
         'user_add',
 
     ];
+
     public $translatable = ['name'];
+
     protected $table = 'area';
+
     public $timestamps = true;
 
     use SoftDeletes;
 
     protected $dates = ['deleted_at'];
-    public function governmentes()
+
+    public function country()
     {
-        return $this->belongsTo (government::class, 'id_government');
+        return $this->belongsTo(countries::class, 'id_country');
     }
-    public function countries()
+
+    public function government()
     {
-        return $this->belongsTo (countries::class, 'id_country');
+        return $this->belongsTo(government::class, 'id_government');
     }
-    public function city(){
-        return $this->belongsTo (city::class, 'id_city');
+
+    public function city()
+    {
+        return $this->belongsTo(city::class, 'id_city');
     }
 }

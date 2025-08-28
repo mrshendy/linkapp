@@ -20,14 +20,21 @@ class City extends Model
     use SoftDeletes;
     protected $dates = ['deleted_at'];
 
-    public function governmentes()
-    {
-        return $this->belongsTo (government::class, 'id_government');
-    }
-    public function countries()
-    {
-        return $this->belongsTo (countries::class, 'id_country');
-    }
+   public function country()
+{
+    return $this->belongsTo(countries::class, 'id_country');
+}
+
+public function government()
+{
+    return $this->belongsTo(government::class, 'id_government');
+}
+
+public function areas()
+{
+    return $this->hasMany(area::class, 'id_city');
+}
+
 
 
 }

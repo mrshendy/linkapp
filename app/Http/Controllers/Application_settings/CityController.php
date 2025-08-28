@@ -5,9 +5,10 @@ namespace App\Http\Controllers\Application_settings;
 use App\Http\Controllers\Controller;
 use RealRashid\SweetAlert\Facades\Alert;
 use App\Http\Requests\Storecity;
-use App\models\city;
-use App\models\countries;
-use App\models\government;
+use App\models\general\city;
+use App\models\general\countries;
+use App\models\general\Government;
+use App\models\general\area;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -22,6 +23,7 @@ class cityController extends Controller
    * @return Response
    */
   public function index()
+  
   {
     $citys=city::all();
     $governmentes=government::all();

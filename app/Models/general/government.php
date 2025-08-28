@@ -22,9 +22,21 @@ class government extends Model
 
     protected $dates = ['deleted_at'];
 
-    public function countries(){
-        return $this->belongsTo (countries::class, 'id_country');
-    }
+    public function country()
+{
+    return $this->belongsTo(countries::class, 'id_country');
+}
+
+public function cities()
+{
+    return $this->hasMany(city::class, 'id_government');
+}
+
+public function areas()
+{
+    return $this->hasMany(area::class, 'id_government');
+}
+
 
 
 }
