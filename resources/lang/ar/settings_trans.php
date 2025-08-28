@@ -25,10 +25,52 @@ return [
     'plural' => 'اعدادات التخصصات ',
 
 
-    //Control buttons
-    'add' => 'اضافة',
-    'update' => 'تحديث',
-    'delete' => 'حذف',
+
+    
+
+    // الصفحات
+    'countries'     => 'الدول',
+    'governorate'   => 'المحافظات',
+    'city'          => 'المدن',
+    'area'          => 'المناطق',
+    'nationalities' => 'الجنسيات',
+
+    // أزرار عامة
+    'create_new'   => 'إنشاء جديد',
+    'add'          => 'إضافة',
+    'edit'         => 'تعديل',
+    'update'       => 'تحديث',
+    'delete'       => 'حذف',
+    'cancel'       => 'إلغاء',
+    'actions'      => 'الإجراءات',
+    'save'         => 'حفظ',
+    'back'         => 'رجوع',
+
+    // رسائل
+    'created_success' => 'تم الإنشاء بنجاح',
+    'updated_success' => 'تم التحديث بنجاح',
+    'deleted_success' => 'تم الحذف بنجاح',
+    'no_data'         => 'لا توجد بيانات متاحة',
+    'manage_areas'       => 'إدارة المناطق',
+    'country'            => 'الدولة',
+    'choose_country'     => '-- اختر الدولة --',
+    'choose_governorate' => '-- اختر المحافظة --',
+    'choose_city'        => '-- اختر المدينة --',
+    'name'               => 'الاسم',
+    'notes'              => 'ملاحظات',
+    'user'               => 'المستخدم',
+    'manage_cities'     => 'إدارة المدن',
+    'choose_country'    => '-- اختر الدولة --',
+    'choose_governorate'=> '-- اختر المحافظة --',
+    'manage_countries'    => 'إدارة الدول',
+    'country_name'        => 'اسم الدولة',
+    'enter_country_name'  => 'ادخل اسم الدولة',
+    'countries_list'      => 'قائمة الدول',
+    'add_notes'           => 'ملاحظات إضافية',
+    'enter_user'          => 'اسم المستخدم',
+    'confirm_delete'      => 'هل أنت متأكد من الحذف؟',
+    'manage_governorates' => 'إدارة المحافظات',
+
 
     
     

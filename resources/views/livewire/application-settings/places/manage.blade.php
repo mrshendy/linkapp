@@ -10,16 +10,16 @@
                             <i class="mdi mdi-flag text-info" style="font-size:40px;"></i>
                         </div>
                     </div>
-                    <h5 class="card-title fw-bold mb-3">{{ trans('settings_trans.countries') }}</h5>
+                    <h5 class="card-title fw-bold mb-3">{{ __('settings_trans.countries') }}</h5>
                 </div>
                 <a href="{{ route('countries.index') }}" 
                    class="btn btn-info btn-lg rounded-pill px-5 mt-auto">
-                    {{ trans('settings_trans.Go_to_settings_now') }}
+                    {{ __('settings_trans.Go_to_settings_now') }}
                 </a>
             </div>
         </div>
 
-        <!-- Government -->
+        <!-- Governorates -->
         <div class="col-xxl-4 col-lg-6">
             <div class="card text-center shadow border-0 h-100 rounded-4 p-4 d-flex flex-column justify-content-between card-hover" style="min-height: 250px;">
                 <div>
@@ -28,16 +28,16 @@
                             <i class="mdi mdi-city text-info" style="font-size:40px;"></i>
                         </div>
                     </div>
-                    <h5 class="card-title fw-bold mb-3">{{ trans('settings_trans.governorate') }}</h5>
+                    <h5 class="card-title fw-bold mb-3">{{ __('settings_trans.governorate') }}</h5>
                 </div>
                 <a href="{{ route('government.index') }}" 
                    class="btn btn-info btn-lg rounded-pill px-5 mt-auto">
-                    {{ trans('settings_trans.Go_to_settings_now') }}
+                    {{ __('settings_trans.Go_to_settings_now') }}
                 </a>
             </div>
         </div>
 
-        <!-- City -->
+        <!-- Cities -->
         <div class="col-xxl-4 col-lg-6">
             <div class="card text-center shadow border-0 h-100 rounded-4 p-4 d-flex flex-column justify-content-between card-hover" style="min-height: 250px;">
                 <div>
@@ -46,16 +46,16 @@
                             <i class="mdi mdi-home-city-outline text-info" style="font-size:40px;"></i>
                         </div>
                     </div>
-                    <h5 class="card-title fw-bold mb-3">{{ trans('settings_trans.city') }}</h5>
+                    <h5 class="card-title fw-bold mb-3">{{ __('settings_trans.city') }}</h5>
                 </div>
                 <a href="{{ route('city.index') }}" 
                    class="btn btn-info btn-lg rounded-pill px-5 mt-auto">
-                    {{ trans('settings_trans.Go_to_settings_now') }}
+                    {{ __('settings_trans.Go_to_settings_now') }}
                 </a>
             </div>
         </div>
 
-        <!-- Area -->
+        <!-- Areas -->
         <div class="col-xxl-4 col-lg-6">
             <div class="card text-center shadow border-0 h-100 rounded-4 p-4 d-flex flex-column justify-content-between card-hover" style="min-height: 250px;">
                 <div>
@@ -64,11 +64,11 @@
                             <i class="mdi mdi-map text-info" style="font-size:40px;"></i>
                         </div>
                     </div>
-                    <h5 class="card-title fw-bold mb-3">{{ trans('settings_trans.area') }}</h5>
+                    <h5 class="card-title fw-bold mb-3">{{ __('settings_trans.area') }}</h5>
                 </div>
                 <a href="{{ route('area.index') }}" 
                    class="btn btn-info btn-lg rounded-pill px-5 mt-auto">
-                    {{ trans('settings_trans.Go_to_settings_now') }}
+                    {{ __('settings_trans.Go_to_settings_now') }}
                 </a>
             </div>
         </div>

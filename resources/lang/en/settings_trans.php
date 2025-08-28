@@ -24,10 +24,52 @@ return [
     'splashscreen_settings' => 'Splash Screen Settings',
     'plural' => 'Specialty Settings',
 
-    // Control buttons
-    'add' => 'Add',
-    'update' => 'Update',
-    'delete' => 'Delete',
+    
+   
+    // Pages
+    'countries'     => 'Countries',
+    'governorate'   => 'Governorates',
+    'city'          => 'Cities',
+    'area'          => 'Areas',
+    'nationalities' => 'Nationalities',
+
+    // Common buttons
+    'create_new'   => 'Create New',
+    'add'          => 'Add',
+    'edit'         => 'Edit',
+    'update'       => 'Update',
+    'delete'       => 'Delete',
+    'cancel'       => 'Cancel',
+    'actions'      => 'Actions',
+    'save'         => 'Save',
+    'back'         => 'Back',
+
+    // Messages
+    'created_success' => 'Created successfully',
+    'updated_success' => 'Updated successfully',
+    'deleted_success' => 'Deleted successfully',
+    'no_data'         => 'No data available',
+    'manage_areas'       => 'Manage Areas',
+    'country'            => 'Country',
+    'choose_country'     => '-- Choose Country --',
+    'choose_governorate' => '-- Choose Governorate --',
+    'choose_city'        => '-- Choose City --',
+    'name'               => 'Name',
+    'notes'              => 'Notes',
+    'user'               => 'User',
+    'manage_cities'     => 'Manage Cities',
+    'choose_country'    => '-- Choose Country --',
+    'choose_governorate'=> '-- Choose Governorate --',
+    'manage_countries'    => 'Manage Countries',
+    'country_name'        => 'Country Name',
+    'enter_country_name'  => 'Enter country name',
+    'countries_list'      => 'Countries List',
+    'add_notes'           => 'Additional notes',
+    'enter_user'          => 'Enter user name',
+    'confirm_delete'      => 'Are you sure you want to delete?',
+    'manage_governorates' => 'Manage Governorates',
+
+
 
     'places_settings' => 'Places Settings',
 
