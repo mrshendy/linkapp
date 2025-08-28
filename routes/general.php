@@ -31,6 +31,9 @@ Route::group(
             // 🔹 resource للإعدادات
             Route::resource('settings', 'application_settingsController');
 
+            Route::resource('specialties', 'specialty_settingsController');
+
+
             // 🔹 صفحة manage إضافية
             Route::get('/settingssplashscreen', 'application_settingsController@splashscreen')
                 ->name('settings.splashscreen');

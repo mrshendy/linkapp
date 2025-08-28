@@ -99,6 +99,26 @@
         </div>
     </div>
 
+
+     <!-- specialty -->
+    <div class="col-xxl-4 col-lg-6">
+        <div class="card text-center shadow-sm border-0 h-100 setting-card">
+            <div class="icon-box mx-auto mb-3">
+                <div class="rounded-circle d-flex align-items-center justify-content-center bg-light shadow-sm"
+                     style="width:90px; height:90px;">
+                    <i class="mdi mdi-cellphone-information text-success" style="font-size:40px;"></i>
+                </div>
+            </div>
+            <h5 class="card-title fw-bold mb-2">{{ trans('settings_trans.splashscreen_settings') }}</h5>
+            <a href="{{ route('specialties.index') }}" 
+               class="btn btn-primary rounded-pill px-4">
+                <i class="mdi mdi-arrow-left-circle-outline ms-1"></i>
+                {{ trans('settings_trans.Go_to_settings_now') }}
+            </a>
+        </div>
+    </div>
+
+
 </div>
 
 {{-- CSS --}}
